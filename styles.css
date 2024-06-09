@@ -9,8 +9,22 @@ header {
 }
 
 .banner {
-    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    /* Tamaño máximo del banner */
+    margin: auto;
+    overflow: hidden;
 }
+
+.banner-img {
+    height: 400px;
+    /* Altura estándar para las imágenes del banner */
+    object-fit: cover;
+    /* Mantiene el aspecto de las imágenes */
+    width: 100%;
+}
+
 
 .cta {
     margin-bottom: 20px;
