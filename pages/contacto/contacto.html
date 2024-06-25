@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="contacto.css" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="container mt-5">
+        <h1 class="mb-4">Contáctanos</h1>
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom01">Nombre</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" required>
+                    <div class="valid-feedback">¡Se ve bien!</div>
+                    <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Apellido</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Apellido" required>
+                    <div class="valid-feedback">¡Se ve bien!</div>
+                    <div class="invalid-feedback">Por favor ingresa tu apellido.</div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom03">Email</label>
+                    <input type="email" class="form-control" id="validationCustom03" placeholder="Email" required>
+                    <div class="invalid-feedback">Por favor ingresa un email válido.</div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom04">Teléfono</label>
+                    <input type="tel" class="form-control" id="validationCustom04" placeholder="Teléfono" required>
+                    <div class="invalid-feedback">Por favor ingresa un número de teléfono válido.</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="validationCustom05">Mensaje</label>
+                <textarea class="form-control" id="validationCustom05" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <div class="invalid-feedback">Por favor ingresa un mensaje.</div>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+        </form>
+
+       
+        <h2 class="mt-5 text-center">Nuestras Oficinas</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+            
+                <h3>Palermo</h3>
+                <p>Dirección: Plaza Serrano 123</p>
+                <p>Teléfono: (123) 456-7890</p>
+                <p>Email: lupulo.dorado1@hotmail.com</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Recoleta</h3>
+                <p>Dirección: Recoleta Mall </p>
+                <p>Teléfono: (987) 654-3210</p>
+                <p>Email: lupulo.dorado2@hotmail.com</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Belgrano</h3>
+                <p>Dirección: Avenida Siempreviva 742</p>
+                <p>Teléfono: (555) 555-5555</p>
+                <p>Email: lupulo.dorado3@hotmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="footer mt-5">
+        <div class="container">
+            <span class="text-muted">© 2024 Lúpulo Dorado. Todos los derechos reservados.</span>
+        </div>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+    
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+</html>
