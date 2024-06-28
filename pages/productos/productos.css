@@ -1,126 +1,214 @@
 /* Estilos generales */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1 {
-    color: #007bff;
-    margin-top: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Estilos para las tarjetas de productos */
-  .product-card {
-    margin-bottom: 30px;
-    border: 1px solid #dee2e6;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.2s;
-  }
-  
-  .product-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .product-card img {
-    border-bottom: 1px solid #dee2e6;
-    width: 100%;
-    height: auto;
-  }
-  
-  .product-card .card-body {
-    padding: 15px;
-    text-align: center;
-  }
-  
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #007bff;
+  margin-top: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para las tarjetas de productos */
+.product-card {
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  width: 100%; /* Ajuste para ocupar el 100% del contenedor padre */
+  height: 100%; /* Ajuste para ocupar el 100% del contenedor padre */
+  display: flex; /* Para alinear contenido verticalmente */
+  flex-direction: column; /* Alineación vertical */
+  justify-content: space-between; /* Alineación vertical */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+}
+
+.product-card img {
+  width: 100%; /* Ajuste para ocupar el 100% del contenedor padre */
+  height: 150px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Ajuste para que la imagen cubra el contenedor */
+  border-radius: 10px 10px 0 0; /* Borde redondeado solo arriba */
+}
+
+.product-card .card-body {
+  padding: 15px;
+  text-align: center;
+  flex-grow: 1; /* Para que el contenido del body ocupe el espacio restante */
+}
+
+.product-card .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #343a40;
+}
+
+.product-card .card-text {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #6c757d;
+}
+
+.product-card .btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.product-card .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries para dispositivos pequeños */
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #007bff;
+  margin-top: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para las tarjetas de productos */
+.product-card {
+  margin-bottom: 30px;
+  border: 1px solid #000; /* Borde negro */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  width: 100%; /* Ajuste para ocupar el 100% del contenedor padre */
+  height: 100%; /* Ajuste para ocupar el 100% del contenedor padre */
+  display: flex; /* Para alinear contenido verticalmente */
+  flex-direction: column; /* Alineación vertical */
+  justify-content: space-between; /* Alineación vertical */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+}
+
+.product-card img {
+  width: 100%; /* Ajuste para ocupar el 100% del contenedor padre */
+  height: 150px; /* Altura fija para todas las imágenes */
+  object-fit:contain; /* Ajuste para que la imagen cubra el contenedor */
+  border-radius: 10px 10px 0 0; /* Borde redondeado solo arriba */
+  border-bottom: 1px solid #000; /* Borde negro en la parte inferior de la imagen */
+}
+
+.product-card .card-body {
+  padding: 15px;
+  text-align: center;
+  flex-grow: 1; /* Para que el contenido del body ocupe el espacio restante */
+}
+
+.product-card .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #343a40;
+}
+
+.product-card .card-text {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #6c757d;
+}
+
+.product-card .btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.product-card .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 576px) {
   .product-card .card-title {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-    color: #343a40;
-  }
-  
-  .product-card .card-text {
-    font-size: 1rem;
-    margin-bottom: 15px;
-    color: #6c757d;
-  }
-  
-  .product-card .btn-primary {
-    background-color: #007bff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.2s;
-  }
-  
-  .product-card .btn-primary:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Media Queries para dispositivos pequeños */
-  @media (max-width: 576px) {
-    .product-card .card-title {
       font-size: 1rem;
-    }
-  
-    .product-card .card-text {
+  }
+
+  .product-card .card-text {
       font-size: 0.875rem;
-    }
   }
-  
-  /* Media Queries para dispositivos medianos */
-  @media (min-width: 768px) {
-    .product-card {
+}
+
+/* Media Queries para dispositivos medianos */
+@media (min-width: 768px) {
+  .product-card {
       margin-bottom: 20px;
-    }
-  
-    .product-card .card-title {
+  }
+
+  .product-card .card-title {
       font-size: 1.5rem;
-    }
-  
-    .product-card .card-text {
+  }
+
+  .product-card .card-text {
       font-size: 1.125rem;
-    }
   }
-  
-  /* Media Queries para dispositivos grandes */
-  @media (min-width: 992px) {
-    .product-card {
+}
+
+/* Media Queries para dispositivos grandes */
+@media (min-width: 992px) {
+  .product-card {
       margin-bottom: 30px;
-    }
-  
-    .product-card .card-title {
+  }
+
+  .product-card .card-title {
       font-size: 1.75rem;
-    }
-  
-    .product-card .card-text {
+  }
+
+  .product-card .card-text {
       font-size: 1.25rem;
-    }
   }
-  
-  /* Media Queries para dispositivos extra grandes */
-  @media (min-width: 1200px) {
-    .product-card {
+}
+
+/* Media Queries para dispositivos extra grandes */
+@media (min-width: 1200px) {
+  .product-card {
       margin-bottom: 40px;
-    }
-  
-    .product-card .card-title {
-      font-size: 2rem;
-    }
-  
-    .product-card .card-text {
-      font-size: 1.375rem;
-    }
   }
-  
+
+  .product-card .card-title {
+      font-size: 2rem;
+  }
+
+  .product-card .card-text {
+      font-size: 1.375rem;
+  }
+}
+

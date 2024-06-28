@@ -1,10 +1,9 @@
 $(document).ready(function() {
     var products = [
-      { name: "Producto 1", price: "$10", img: "https://via.placeholder.com/150" },
-      { name: "Producto 2", price: "$20", img: "https://via.placeholder.com/150" },
-      { name: "Producto 3", price: "$30", img: "https://via.placeholder.com/150" },
-      { name: "Producto 4", price: "$40", img: "https://via.placeholder.com/150" }
-    ];
+      { name: "Special IPA", price: "$10", img: "../../images/rubia.png" },
+      { name: "Dark Stout", price: "$20", img: "../../images/stout.png" },
+      { name: "King Apa", price: "$30", img: "../../images/roja.png" },
+      ];
   
     products.forEach(function(product) {
       $('#product-catalog').append(`
