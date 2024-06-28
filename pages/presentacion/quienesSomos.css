@@ -1,3 +1,15 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+.bg-dark-custom {
+    background-color: #343a40;
+}
+.text-gold {
+    color: #d4af37;
+}
+.bg-light-custom {
+    background-color: #f8f9fa;
+}
+.navbar-brand img {
+    height: 30px; 
+}
