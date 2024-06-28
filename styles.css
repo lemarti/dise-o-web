@@ -42,8 +42,22 @@ header {
     margin-bottom: 20px;
 }
 
-footer {
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
     background-color: #f8f9fa;
-    padding: 20px;
-    text-align: center;
+}
+
+.footer-icons a {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.mr-4{
+    margin-right: 10px;
+    font-weight: bold;
 }
